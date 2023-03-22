@@ -1,0 +1,11 @@
+{
+  {
+    "/solutions/canteens", [
+      {
+        "permission": "Canteen.Read",
+        "schema": "DelegatedWork",
+        "method": "GET"
+      }
+    ]
+  }
+}
