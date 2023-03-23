@@ -1,7 +1,7 @@
 {
   "$schema": "",
-  {
-    "/solutions/canteens", [
+  "paths": {
+    "/solutions/canteens": [
       {
         "permission": ["Canteen.Read"],
         "schema": ["DelegatedWork"],
@@ -16,11 +16,9 @@
         "permission": ["Canteen.ReadWrite.All"],
         "schema": ["DelegatedWork"],
         "method": ["GET", "POST"]
-      },
-    ]
-  },
-  {
-    "/solutions/canteens({id})", [
+      }
+    ],
+    "/solutions/canteens({id})": [
       {
         "permission": ["Canteen.Read"],
         "schema": ["DelegatedWork"],
@@ -40,11 +38,9 @@
         "permission": ["Canteen.ReadWrite.All"],
         "schema": ["Application", "DelegatedWork"],
         "method": ["DELETE"]
-      },
-    ]
-  },
-  {
-    "/solutions/canteens ({id}) /stationPoster", [
+      }
+    ],
+    "/solutions/canteens ({id}) /stationPoster": [
       {
         "permission": ["Canteen.Read"],
         "schema": ["DelegatedWork"],
@@ -59,7 +55,7 @@
         "permission": ["Canteen.ReadWrite.All"],
         "schema": ["DelegatedWork"],
         "method": ["GET", "PUT", "DELETE"]
-      },
+      }
     ]
   }
 }

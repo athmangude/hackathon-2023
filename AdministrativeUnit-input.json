@@ -1,0 +1,165 @@
+{
+  "$schema": "",
+  "paths": {
+    "/administrativeunits": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/administrativeunits/{id}": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/administrativeunits/{id}/members": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/administrativeunits/{id}/members/{id}": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["DELETE", "GET"]
+      }
+    ],
+    "/administrativeunits/delta": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/administrativeunits/{id}": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/directory/deleteditems/{id": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/microsoft.graph.administrativeunit": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/microsoft.graph.application": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/microsoft.graph.group": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/microsoft.graph.serviceprincipal": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/microsoft.graph.user": [
+      {
+        "permission": ["AdministrativeUnit.Read.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/administrativeunits": [
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/directory/deleteditems/{id}": [
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/directory/deleteditems/{id}/restore": [
+      {
+        "permission": ["AdministrativeUnit.ReadWrite.All"],
+        "schema": ["Application", "DelegatedWork"],
+        "method": ["POST"]
+      }
+    ]
+  }
+}
