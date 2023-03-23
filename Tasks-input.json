@@ -1,0 +1,1780 @@
+{
+  "$schema": [],
+  "paths": {
+    "/me/outlook/taskfolders": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/taskfolders/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/me/outlook/taskfolders/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/taskgroups": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/taskgroups/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/me/outlook/taskgroups/{id}/taskfolders": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/taskgroups/{id}/taskfolders/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/me/outlook/taskgroups/{id}/taskfolders/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/outlook/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/me/outlook/tasks/{id}/attachments": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/tasks/alltasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/tasks/lists": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/tasks/lists/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}/checklistitems/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/tasks/lists/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/todo/lists": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/attachments": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/attachments/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedPersonal", "DelegatedWork"],
+        "method": ["DELETE", "GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/checklistitems": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/checklistitems/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/linkedresources": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/linkedresources/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/outlook/taskfolders": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/taskfolders/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/users/{id}/outlook/taskfolders/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/taskgroups": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/taskgroups/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/users/{id}/outlook/taskgroups/{id}/taskfolders": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/taskgroups/{id}/taskfolders/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/users/{id}/outlook/taskgroups/{id}/taskfolders/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/users/{id}/outlook/tasks/{id}/attachments": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/tasks/alltasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/tasks/lists": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}/checklistitems/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/tasks/lists/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/todo/lists": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/attachments": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/attachments/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedPersonal", "DelegatedWork"],
+        "method": ["DELETE", "GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/checklistitems": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/checklistitems/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/linkedresources": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/linkedresources/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      }
+    ],
+    "/drive/root/createdbyuser/planner/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/groups/{id}/planner/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["DELETE", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner/all/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner/favoriteplans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner/recentplans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/planner/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/planner/buckets": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/planner/buckets/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedPersonal", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/planner/buckets/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/planner/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/planner/plans/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedPersonal", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/planner/plans/{id}/buckets": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/planner/plans/{id}/details": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/planner/plans/{id}/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/planner/rosters/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["DELETE", "GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET"]
+      }
+    ],
+    "/planner/rosters/{id}/members": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/planner/rosters/{id}/members/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["DELETE", "GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET"]
+      }
+    ],
+    "/planner/rosters/{id}/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/planner/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/planner/tasks/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedPersonal", "DelegatedWork"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/planner/tasks/{id}/assignedtotaskboardformat": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/planner/tasks/{id}/buckettaskboardformat": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/planner/tasks/{id}/details": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/planner/tasks/{id}/progresstaskboardformat": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/planner": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET", "PATCH"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/all/delta": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/favoriteplans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/plans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/recentplans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/rosterplans": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/planner/tasks": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.Read.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}/checklistitems": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}/linkedresources": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}/linkedresources/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}/checklistitems": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}/linkedresources": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}/linkedresources/{id}": [
+      {
+        "permission": ["Tasks.Read"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal", "Application"],
+        "method": ["DELETE", "GET", "PATCH"]
+      }
+    ],
+    "/me/outlook/tasks/{id}/complete": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/tasks/alltasks/{id}/move": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/tasks/lists/{id}/tasks/{id}/move": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks/{id}/attachments/createuploadsession": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/outlook/tasks/{id}/complete": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/tasks/alltasks/{id}/move": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/tasks/lists/{id}/tasks/{id}/move": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks/{id}/attachments/createuploadsession": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["POST"]
+      }
+    ],
+    "/me/todo/lists/{id}/tasks": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "POST"]
+      }
+    ],
+    "/me/todo/lists/delta": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/todo/lists/delta": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/todo/lists/{id}": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "PATCH"]
+      }
+    ],
+    "/users/{id}/todo/lists/{id}/tasks": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork", "DelegatedPersonal"],
+        "method": ["GET", "PATCH", "POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["GET", "PATCH", "POST"]
+      }
+    ],
+    "/planner/rosters": [
+      {
+        "permission": ["Tasks.ReadWrite"],
+        "schema": ["DelegatedWork"],
+        "method": ["POST"]
+      },
+      {
+        "permission": ["Tasks.ReadWrite.All"],
+        "schema": ["Application"],
+        "method": ["POST"]
+      }
+    ]
+  }
+}
