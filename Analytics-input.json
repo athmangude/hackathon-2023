@@ -1,0 +1,19 @@
+{
+  "$schema": "",
+  "paths": {
+    "/me/analytics/activitystatistics": [
+      {
+        "permission": ["Analytics.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/analytics/activitystatistics": [
+      {
+        "permission": ["Analytics.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ]
+  }
+}

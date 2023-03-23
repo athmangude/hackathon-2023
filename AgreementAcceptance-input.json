@@ -1,0 +1,41 @@
+{
+  "$schema": "",
+  "paths": {
+    "/identitygovernance/termsofuse/agreements/{id}/acceptances": [
+      {
+        "permission": ["AgreementAcceptance.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AgreementAcceptance.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/me/agreementacceptances": [
+      {
+        "permission": ["AgreementAcceptance.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AgreementAcceptance.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/users/{id}/agreementacceptances": [
+      {
+        "permission": ["AgreementAcceptance.Read"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["AgreementAcceptance.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ]
+  }
+}

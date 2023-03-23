@@ -1,0 +1,55 @@
+{
+  "$schema": "",
+  "paths": {
+    "/agreements/{id}": [
+      {
+        "permission": ["Agreement.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/agreements/{id}/file": [
+      {
+        "permission": ["Agreement.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Agreement.ReadWrite.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      }
+    ],
+    "/identitygovernance/termsofuse/agreements": [
+      {
+        "permission": ["Agreement.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Agreement.ReadWrite.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["POST"]
+      }
+    ],
+    "/identitygovernance/termsofuse/agreements/{id}": [
+      {
+        "permission": ["Agreement.Read.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["GET"]
+      },
+      {
+        "permission": ["Agreement.ReadWrite.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["DELETE", "PATCH"]
+      }
+    ],
+    "/agreements/{id}/files": [
+      {
+        "permission": ["Agreement.ReadWrite.All"],
+        "schema": ["DelegatedWork"],
+        "method": ["POST"]
+      }
+    ]
+  }
+}
